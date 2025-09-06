@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  5 SEP 2025 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  5 SEP 2025 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -638,7 +638,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 253.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 251.
 (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -648,14 +648,14 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <fig1.pdf, id=25, 178.38644pt x 146.82855pt>
 File: fig1.pdf Graphic file (type pdf)
 <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf  used on input line 357.
+Package pdftex.def Info: fig1.pdf  used on input line 355.
 (pdftex.def)             Requested size: 178.386pt x 146.82819pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 368.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 366.
 (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 368.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 366.
 
 
 [3]
@@ -685,7 +685,7 @@ L3 programming layer <2025-08-13>
 Here is how much of TeX's memory you used:
  38637 strings out of 468133
  1009639 string characters out of 5430713
- 1709171 words of memory out of 5000000
+ 1709170 words of memory out of 5000000
  66861 multiletter control sequences out of 15000+600000
  672454 words of font info for 126 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
