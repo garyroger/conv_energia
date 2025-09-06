@@ -1,0 +1,186 @@
+%% rectificador de media onda con diodo de retorno
+clear; clc; close all;
+
+% parametros (ajusta a tu caso de psim)
+vhat = 1;          % amplitud de la senoidal [v]
+f    = 60;          % frecuencia [hz]
+r    = 1;          % resistencia [ohm]
+l    = 1e-3;       % inductancia [h]
+
+vf1  = 0.0;         % caida directa del diodo d1 [v] (0 ideal)
+vf2  = 0.0;         % caida directa del diodo d2 [v] (0 ideal)
+
+periodos_calentar = 30;   % ciclos para alcanzar eep
+periodos_mostrar  = 3;    % ciclos para graficar
+
+% discretizacion
+w = 2*pi*f; 
+tper = 1/f;
+fs = 4000;         
+dt = tper/fs;
+
+t_final = (periodos_calentar + periodos_mostrar)*tper;
+t = 0:dt:t_final; 
+n = numel(t);
+
+% codigos de estado: a=0 (d1 on), b=1 (d2 on), c=2 (ambos off)
+A = 0; B = 1; C = 2;
+
+% preasignacion
+iL   = zeros(1,n);
+vi   = zeros(1,n);
+voi  = zeros(1,n);
+vR   = zeros(1,n);
+vL   = zeros(1,n);
+st   = zeros(1,n);
+
+% condiciones iniciales
+estado = C;     % iniciamos sin corriente
+i = 0.0;
+
+% bucle principal
+for k = 1:n-1
+    tk = t(k);
+    vik = vhat*sin(w*tk);
+    vi(k) = vik;
+
+    switch estado
+        case A  % d1 on, d2 off
+            di = (vik - vf1 - r*i)/l;
+            i  = i + di*dt;
+            vo = vik - vf1;
+
+            % transicion a b cuando la senoidal cae (idealmente vi<=0)
+            if vik <= 0
+                estado = B;
+            end
+
+        case B  % d1 off, d2 on (libre circulacion)
+            di = -(r*i + vf2)/l;
+            i  = i + di*dt;
+            vo = -vf2;   % ideal seria 0
+
+            % si vi>0 vuelve a a; si la corriente llega a cero pasa a c
+            if vik > 0
+                estado = A;
+            elseif i <= 0
+                i = 0;
+                estado = C;
+            end
+
+        otherwise % C: ambos off (dcm)
+            di = 0;
+            i  = 0;
+            vo = 0;
+            if vik > 0
+                estado = A;
+            end
+    end
+
+    % guardar
+    iL(k)  = i;
+    voi(k) = vo;
+    vR(k)  = r*iL(k);
+    vL(k)  = -(iL(k)*l)/r;   % kvl del lazo activo
+    st(k)  = estado;
+end
+
+% ultimo punto
+vi(end)  = vhat*sin(w*t(end));
+iL(end)  = iL(end-1);
+voi(end) = voi(end-1);
+vR(end)  = vR(end-1);
+vL(end)  = vL(end-1);
+st(end)  = st(end-1);
+
+% cortar para mostrar solo los ultimos periodos
+t0 = periodos_calentar*tper;
+idx = t >= t0;
+
+tt   = t(idx) - t0;
+vi_p = vi(idx);
+voi_p= voi(idx);
+iL_p = iL(idx);
+vR_p = vR(idx);
+vL_p = vL(idx);
+st_p = st(idx);
+
+data = readtable('data_tarea2.txt');
+t_psim =  table2array(data(:,1));
+ir_psim =  table2array(data(:,2));
+iD_psim =  table2array(data(:,3));
+vD_psim =  table2array(data(:,4));
+vL_psim =  table2array(data(:,5));
+Voi_psim =  table2array(data(:,6));
+Vi_psim =  table2array(data(:,7));
+Vr_psim =  table2array(data(:,8));
+
+% ===== estilo ieee para graficas =====
+% setea fuentes y estilos por defecto (solo una vez por sesion)
+set(groot,'defaulttextinterpreter','latex');
+set(groot,'defaultaxesTickLabelInterpreter','latex');
+set(groot,'defaultlegendInterpreter','latex');
+set(groot,'defaultAxesFontName','Times New Roman');
+set(groot,'defaultTextFontName','Times New Roman');
+
+% tamanos y grosores recomendados
+fs_ax   = 10;     % fuente de ejes (ieee single column)
+fs_lbl  = 10;    % fuente de etiquetas
+fs_legend = 10;   % fuente de la leyenda
+lw_main = 1.2;   % grosor de linea
+ms_main = 5;     % tamano de marcador
+
+% tamano de figura en pulgadas (single column ~ 5.5in x 2in)
+fig_w = 5.5; fig_h = 2;
+
+% graficas
+f1 = figure(1); clf;
+set(f1,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+grid on;
+box on;
+plot(tt, vi_p, 'DisplayName','v_i (entrada)'); hold on;
+plot(tt, voi_p,'DisplayName','v_{oi} (salida)'); grid on;
+xlabel('tiempo [s]'); ylabel('voltaje [v]');
+legend('location','best');
+legend box off
+
+f2 = figure(2); clf;
+set(f2,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+grid on;
+box on;
+plot(tt, iL_p, 'DisplayName','i_L'); grid on;
+xlabel('tiempo [s]'); ylabel('corriente [a]');
+legend('location','best');
+legend box off
+
+f3 = figure(3); clf;
+set(f3,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+grid on;
+box on;
+plot(tt, vR_p, 'DisplayName','v_R = R i_L'); grid on;
+xlabel('tiempo [s]'); ylabel('voltaje [v]');
+legend('location','best');
+legend box off
+
+f4 = figure(4); clf;
+set(f4,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+grid on
+box on
+plot(tt,vR_p); grid on; hold on;
+plot(tt,vL_p);
+xlabel('tiempo [s]'); ylabel('voltaje (V)');
+legend box off
+
+f5 = figure(5); clf;
+set(f5,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+grid on
+box on
+plot(t_psim,ir_psim,'b', 'LineWidth',1.5); hold on;
+plot(t_psim,iD_psim,'r--', 'LineWidth',1.2); 
+plot(t_psim,vL_psim,'LineWidth',1.5, 'Color',[29/255, 185/255, 84/255]);
+xlabel('tiempo [s]','FontSize',fs_ax);
+legend('$i_R$','$i_D$','$v_L$','location','best','FontSize',fs_legend);
+legend box off
+
+
+
