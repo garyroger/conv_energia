@@ -1,9 +1,10 @@
 \documentclass[conference]{IEEEtran}
 
 \usepackage{graphicx}
-\usepackage{subfigure}
+\usepackage{subcaption}
 \usepackage{amsmath} % assumes amsmath package installed
-\usepackage{amssymb} 
+\usepackage{subcaption}
+\usepackage{amssymb}
 \usepackage{array}
 \usepackage{tikz,circuitikz}
 \usetikzlibrary{fit}
@@ -104,14 +105,14 @@ Please observe the report page limits.
 	\end{circuitikz}
 \end{figure}
 \section{Análisis del rectificador monofásico de media onda con carga \(R\!-\!L\) y diodo de corrida libre}
-En lo que sigue consideramos la fuente sinusoidal
+La fuente sinusoidal de la entrada es: 
 \[
 v_i(t)=V_m\sin(\omega t),
 \]
 una impedancia serie \(R\) y \(L\) (carga), y dos diodos ideales:
 \begin{itemize}
-  \item \(D_1\): rectificador que conecta la fuente a la carga (ánodo en la fuente, cátodo en el nodo de carga).
-  \item \(D_2\): diodo de \emph{flyback } en paralelo a la carga (orientación tal que permite mantener la corriente inductiva cuando la fuente deja de alimentar).
+  \item \(D_1\): rectificador que conecta la fuente a la carga.
+  \item \(D_2\): diodo de \emph{corrida libre} en paralelo a la carga.
 \end{itemize}
 
 \subsection{Estados asumidos de los diodos}
@@ -131,36 +132,35 @@ Definición de los 4 estados considerados y denotamos ON como  conducción (diod
   \item \textbf{Operación de cada estado asumido :}
     \begin{enumerate}
       \item Estado A: Ocurre cuando la tensión instantánea de la fuente tiende a \emph{polarizar positivamente} \(D_1\) y puede imponer una tensión mayor en el nodo de carga que la necesaria para forzar \(D_2\) en conducción inversa. \(D_1\) conduce si \(\;v_i(t) > v_R(t)\) (ánodo de \(D_1\) más positivo que su cátodo). En la práctica, con diodos ideales y caída nula, el encendido ocurre cuando \(v_i(t)\) supera la tensión instantánea necesaria para mantener la corriente \(i(t)>0\).
-      \item Estado B: Ocurre cuando la fuente no sostiene la corriente inductiva, pero la inercia del inductor mantiene corriente positiva; entonces \(D_2\) ofrece el camino de libre. \(D_2\) conduce si la polaridad en la carga, hace que el ánodo de \(D_2\) sea más positivo que su cátodo, es decir, cuando la inercia del inductor empuja la corriente y la tensión en la carga favorece la conducción por \(D_2\). Con la orientación antiparalela típica, esto sucede cuando \(v_i(t)\) cae por debajo de \(v_o(t)\) y la corriente inductiva es positiva.
-      \item Estado C: Estado de no-conducción es válido si la corriente ha decaído a cero (\(i(t)=0\)  ) y ambas tensiones en los ánodos/cátodos de los diodos dejan a ambos inversamente polarizados.
-      \item Estado D: Si los diodos son ideales y están orientados en la configuración habitual (antiparalelo para \(D_2\)), la conducción simultánea tiende a producir una contradicción en las polaridades o a generar un lazo de circulación que, en el mejor de los casos, fuerza igualar tensiones entre nodos y, en el peor, crea una trayectoria de cortocircuito entre la fuente y el retorno. Por tanto en la práctica se considera no-sostenible como estado permanente y debe justificarse con cuidado.
+      \item Estado B: Ocurre cuando la fuente no sostiene la corriente inductiva, pero la inercia del inductor mantiene corriente positiva; entonces \(D_2\) ofrece el camino de libre. \(D_2\) conduce si la polaridad en la carga, hace que el ánodo de \(D_2\) sea más positivo que su cátodo, es decir, cuando la inercia del inductor empuja la corriente y la tensión en la carga favorece la conducción por \(D_2\). 
+      \item Estado C: Estado de no-conducción solo es válido si la corriente ha decaído a cero (\(i(t)=0\)  ), pero debido a la función del inductor,este mantendrá la corriente siempre diferente de cero para el circuito, por lo que este estado en practica no se considera. 
+      \item Estado D: Si los diodos son ideales y están orientados en la configuración planteada, la conducción simultánea tiende a producir una contradicción en las polaridades, por tanto en la práctica se considera no-sostenible.
 \end{enumerate}
 \end{itemize}
 
 \subsection{Análisis de estado estacionario periódico}
-
+El estado estacionario per
 
 \subsection{Modelo en espacio de estados de los estados válidos }
-En este sistema la única variable de estado es la corriente \(i(t)\) de la carga \(R\!-\!L\). Usaremos la variable de estado:
+En este sistema la única variable de estado es la corriente \(i(t)\) de la carga \(R\!-\!L\). La variable de estado:
 \[
 x(t)=i(t).
 \]
-A continuación planteamos las ecuaciones de estado para cada configuración válida (y para la configuración asumida D).
-
-\paragraph{Estado A: \(D_1=\mathrm{ON},\;D_2=\mathrm{OFF}\) (circuito L–R  con fuente de alimentación).}
+Las ecuaciones de estado para cada configuración válida.
+\paragraph{Estado A}
 La ecuación diferencial y la representación en espacio de estados:
 \[
 L\frac{di}{dt} + R\,i(t) = v_s(t) = V_m\sin(\omega t).
 \]
 \[
-\begin{bmatrix}\dot{x}(t)\end{bmatrix}
+\dot{x}(t)
 =
-\begin{bmatrix}-\dfrac{R}{L}\end{bmatrix}
+-\dfrac{R}{L}
 \begin{bmatrix}x(t)\end{bmatrix}
 +
-\begin{bmatrix}\dfrac{1}{L}\end{bmatrix}
+\dfrac{1}{L}
 \qquad
-y(t)=\begin{bmatrix}R\end{bmatrix}\begin{bmatrix}x(t)\end{bmatrix}.
+y(t)=Rx(t).
 \]
 Solución general (en \(t_0\) con condición \(i(t_0)=I_0\)):
 \[
@@ -171,41 +171,84 @@ La parte forzada en régimen permanente (cuando el tiempo es mucho mayor que \(\
 i_p(t)=\frac{V_m}{\sqrt{R^2+(\omega L)^2}}\sin(\omega t - \phi),\qquad \phi=\arctan\!\frac{\omega L}{R}.
 \]
 
-\paragraph{Estado B: (diodo \emph{flyback } — circuito L–R  sin fuente).}
-Ecuación diferencial:
+\paragraph{Estado B}
+La ecuación diferencial para este estado es:
 \[
 L\frac{di}{dt} + R\,i(t) = 0
 \]
 \[
-\begin{bmatrix}\dot{x}(t)\end{bmatrix}
+\dot{x}(t)
 =
-\begin{bmatrix}-\dfrac{R}{L}\end{bmatrix}
-\begin{bmatrix}x(t)\end{bmatrix}
+\-\dfrac{R}{L}
+x(t)
 \qquad
-y(t)=\begin{bmatrix}R\end{bmatrix}\begin{bmatrix}x(t)\end{bmatrix}.
+y(t)=Rx(t).
 \]
 La solucion general es:
 \[
 i(t)=I_1\,e^{-\frac{R}{L}(t-t_1)},
 \]
-donde \(I_1\) es la corriente en el instante \(t_1\) en que comienza el freewheeling.
-\paragraph{Estado C: (no-conducción).}
-Si \(x(t)=i(t)=0\) este estado es consistente; la dinámica es \(i\equiv 0\). Si el inductor intenta imponer \(i\neq0\). 
+donde \(I_1\) es la corriente en el instante \(t_1\) en que comienza el \emph{freewheeling}, que seria el decaimiento libre de la corriente.
+
+\section{Comportamiento en el rectificador de media onda con carga $RL$ y diodo de corrida libre}
+En este convertidor, el voltaje del inductor está regido por la relación constitutiva $v_L(t)=L\,\tfrac{d}{dt}i_L$; por tanto, el signo de $v_L$ determina si la corriente crece ($v_L>0$) o decrece ($v_L<0$). Durante el semiciclo positivo, $D_1$ conduce y la salida sigue a la fuente, de modo que el comportamiento de la rama activa se describe por:
+
+\begin{equation*}
+	v_L(t)=v_i(t)-R\,i_L(t).
+\end{equation*}
+
+Al inicio del semiciclo, $v_i$ crece desde cero mientras $i_L$ aún es pequeña, por lo que $v_L$ y el inductor acumula energía; conforme avanza el periodo, la corriente ya acumulada aumenta la caída $R\,i_L$ y se alcanza un instante en el que $v_i=R\,i_L$, para el cual $v_L=0$ y la pendiente de $i_L$ se anula, identificando el máximo de corriente. Después, aun antes del cruce por cero de la senoide, $v_i$ se hace menor que $R\,i_L$ y $v_L$ pasa a ser levemente negativo: el inductor comienza a devolver energía al resistor aunque $D_1$ siga en conducción. Cuando la fuente cruza a negativo, $D_1$ se bloquea y entra el modo de recirculación por el diodo $D_2$; y la KVL del lazo $L\!-\!R\!-\!D_2$ impone
+
+\begin{equation*}
+	v_L(t)=-\,R\,i_L(t),
+\end{equation*}
+
+por lo que $v_L$ permanece negativo y su magnitud es proporcional a la corriente mientras ésta decae exponencialmente con constante de tiempo $\tau=L/R$. En régimen estacionario periódico, la condición de balance volt–segundo del inductor
+\begin{equation*}
+	\int_{t_0}^{t_0+T} v_L(t)\,dt \;=\; L\big[i_L(t_0+T)-i_L(t_0)\big]\;=\;0,
+\end{equation*}
+
+explica que el área positiva de $v_L$ durante la carga de $L$ se compense exactamente con el área negativa durante su descarga.
+
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figuras/ir_id_vl.eps}
+    \caption{$i_R$, $i_D$ y $v_L$}
+    \label{fig:ir-id-vl}
+  \end{subfigure}\hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figuras/voi_vi.eps}
+    \caption{$v_{oi}$ y $v_i$}
+    \label{fig:voi-vi}
+  \end{subfigure}\hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figuras/voi_vr.eps}
+    \caption{$v_{oi}$ y $v_R$}
+    \label{fig:voi-vr}
+  \end{subfigure}
+  \caption{Respuesta del rectificador de media onda con carga $RL$ y diodo de corrida libre.}
+  \label{fig:rectificador-subfigs}
+\end{figure}
+
+
+
+
 
 
 
 \begin{thebibliography}{plain}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interf	ace,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}
+\bibitem{Mohan}
+N.~Mohan, T.~M. Undeland y W.~P. Robbins,
+\textit{Power Electronics: Converters, Applications, and Design},
+3rd ed. Hoboken, NJ, USA: John Wiley \& Sons, 2003.
+\bibitem{Rashid}
+M.~H. Rashid, \textit{Power Electronics: Circuits, Devices, and Applications},
+4th ed. Boston, MA, USA: Pearson, 2014.
 
-\vspace{12pt}
-\color{red}
-This report template contains guidance text for composing and formatting documents. Please ensure that all template text is removed from your document prior to submission of your work. Failure to remove the template text from your document will be considered as a lack of editing effort.
+\end{thebibliography}
 
 \end{document}
