@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757295830.53764 "g:/My Drive/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" "build/main.pdf" "main" 1757295832.35646 0
+["pdflatex"] 1757295965.81964 "g:/My Drive/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" "build/main.pdf" "main" 1757295967.65611 0
   "C:/Users/garyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757189356 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/garyr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737781180 12013393 f664fe0f33da5e45dce14e326c4542cc ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -178,12 +178,12 @@
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "IEEEtran.cls" 1652460826 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/main.aux" 1757295832 2052 9e537bd52a901004343fbaec29d06c41 "pdflatex"
+  "build/main.aux" 1757295967 2052 c5a731c1b87d55df6bc38ba5cca4bcf6 "pdflatex"
   "figuras/ir_id_vl.eps" 1757188689 301145 8cda68638ebefaf7c8c825d375fa5fac ""
   "figuras/voi_vi.eps" 1757188699 281509 e59cf8484fc3f78ca0fc36409f9ccf20 ""
   "figuras/voi_vr.eps" 1757188707 211947 af36caae332ec612ff9be32d8e501057 ""
-  "g:/My Drive/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" 1757295828 10986 913d2effdb1dc03fe185f3ed00e8b5a0 ""
-  "main.tex" 1757295828 10986 913d2effdb1dc03fe185f3ed00e8b5a0 ""
+  "g:/My Drive/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" 1757295963 10752 837812195b7d9bc547296c51f2eee8ea ""
+  "main.tex" 1757295963 10752 837812195b7d9bc547296c51f2eee8ea ""
   (generated)
   "build/main.aux"
   "build/main.log"
