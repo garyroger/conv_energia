@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757373049.05029 "g:/Mi unidad/2. Segundo Semestre/2. Conversión de Energía Eléctrica Para Fuentes Renovables/Tareas/Tarea 2/conv_energia/tarea2_tex/main.tex" "build/main.pdf" "main" 1757373051.41807 0
+["pdflatex"] 1757375408.2702 "g:/Mi unidad/2. Segundo Semestre/2. Conversión de Energía Eléctrica Para Fuentes Renovables/Tareas/Tarea 2/conv_energia/tarea2_tex/main.tex" "build/main.pdf" "main" 1757375410.43391 0
   "C:/Users/alumn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757361077 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alumn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738786947 24225045 21ef95abcdbbd61c78902ffc185618d3 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -178,12 +178,12 @@
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "IEEEtran.cls" 1757112465 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/main.aux" 1757373051 1794 4b5937296eccccf1fb56fade3e96dd0e "pdflatex"
+  "build/main.aux" 1757375410 1985 73148f449d1de1308be8b08a9cd694d8 "pdflatex"
   "figuras/ir_id_vl.eps" 1757361065 317182 8cda68638ebefaf7c8c825d375fa5fac ""
   "figuras/voi_vi.eps" 1757361065 297520 e59cf8484fc3f78ca0fc36409f9ccf20 ""
   "figuras/voi_vr.eps" 1757361065 222929 af36caae332ec612ff9be32d8e501057 ""
-  "g:/Mi unidad/2. Segundo Semestre/2. Conversión de Energía Eléctrica Para Fuentes Renovables/Tareas/Tarea 2/conv_energia/tarea2_tex/main.tex" 1757373048 9895 56b40d0cbbb55d8d99ef221ad7f957d4 ""
-  "main.tex" 1757373048 9895 56b40d0cbbb55d8d99ef221ad7f957d4 ""
+  "g:/Mi unidad/2. Segundo Semestre/2. Conversión de Energía Eléctrica Para Fuentes Renovables/Tareas/Tarea 2/conv_energia/tarea2_tex/main.tex" 1757375407 10454 1dec291670c6a084a39afbe703e9f375 ""
+  "main.tex" 1757375407 10454 1dec291670c6a084a39afbe703e9f375 ""
   (generated)
   "build/main.aux"
   "build/main.log"

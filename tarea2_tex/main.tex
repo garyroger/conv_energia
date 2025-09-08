@@ -103,6 +103,8 @@ Please observe the report page limits.
 		\draw (4,2)-- (5,2) to[R, l_=$R$, v^=$v_R$, i>_=$i_R$] (5,0);
 		\draw (0,0) -- (5,0);
 	\end{circuitikz}
+	\caption{Rectificador de media onda RL con diodo de conducción libre}
+	\label{Fig1}
 \end{figure}
 \section{Análisis del rectificador monofásico de media onda con carga \(R\!-\!L\) y diodo de corrida libre}
 La fuente sinusoidal de la entrada es: 
@@ -137,9 +139,6 @@ Definición de los 4 estados considerados y denotamos ON como  conducción (diod
       \item Estado D: Si los diodos son ideales y están orientados en la configuración planteada, la conducción simultánea tiende a producir una contradicción en las polaridades, por tanto en la práctica se considera no-sostenible.
 \end{enumerate}
 \end{itemize}
-
-\subsection{Análisis de estado estacionario periódico}
-El estado estacionario per
 
 \subsection{Modelo en espacio de estados de los estados válidos }
 En este sistema la única variable de estado es la corriente \(i(t)\) de la carga \(R\!-\!L\). La variable de estado:
@@ -189,6 +188,11 @@ La solucion general es:
 i(t)=I_1\,e^{-\frac{R}{L}(t-t_1)},
 \]
 donde \(I_1\) es la corriente en el instante \(t_1\) en que comienza el \emph{freewheeling}, que seria el decaimiento libre de la corriente.
+
+\subsection{Análisis de estado estacionario periódico}
+Para analizar estado estacionario periódico (PSS) del circuito mostrado en la Fig. \ref{Fig1} se considera que la corriente en el inductor
+es periódica, cumpliendo $i_L(\theta)=i_L(\theta+2\pi)$. Durante el intervalo de conducción del diodo principal ($0 \leq \theta \leq \pi$) la corriente $i_L$ sigue una respuesta natural forzada
+dada por la ecuación y durante la conducción del diodo volante ($\pi \leq \theta \leq 2\pi$) la corriente $i_L$ sigue una respuesta descrita por la ecuación
 
 \section{Comportamiento en el rectificador de media onda con carga $RL$ y diodo de corrida libre}
 En este convertidor, el voltaje del inductor está regido por la relación constitutiva $v_L(t)=L\,\tfrac{d}{dt}i_L$; por tanto, el signo de $v_L$ determina si la corriente crece ($v_L>0$) o decrece ($v_L<0$). Durante el semiciclo positivo, $D_1$ conduce y la salida sigue a la fuente, de modo que el comportamiento de la rama activa se describe por:
