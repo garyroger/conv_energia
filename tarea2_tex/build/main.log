@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  8 SEP 2025 13:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  8 SEP 2025 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,24 +586,24 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip70
 \@temptokenb=\toks39
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 32.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 33.
  (c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 -- Lines per column: 56 (exact).
 (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
@@ -631,12 +631,12 @@ Package caption Info: End \AtBeginDocument code.
  (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 32.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
  (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
  (C:\Users\Glade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -659,12 +659,12 @@ Package epstopdf Info: Source file: <figuras/ir_id_vl.eps>
 (epstopdf)                    date: 2025-09-08 09:08:08
 (epstopdf)                    size: 109706 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/ir_id_vl-eps-converted-to.pdf figuras/ir_id_vl.eps>
-(epstopdf)             \includegraphics on input line 217.
+(epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/ir_id_vl-eps-converted-to.pdf, id=21, 275.0275pt x 130.4875pt>
+<figuras/ir_id_vl-eps-converted-to.pdf, id=20, 275.0275pt x 130.4875pt>
 File: figuras/ir_id_vl-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/ir_id_vl-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/ir_id_vl-eps-converted-to.pdf  used on input line 217.
+Package pdftex.def Info: figuras/ir_id_vl-eps-converted-to.pdf  used on input line 230.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 Package epstopdf Info: Source file: <figuras/voi_vi.eps>
 (epstopdf)                    date: 2025-09-08 09:08:08
@@ -673,12 +673,12 @@ Package epstopdf Info: Source file: <figuras/voi_vi.eps>
 (epstopdf)                    date: 2025-09-08 09:08:08
 (epstopdf)                    size: 103206 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/voi_vi-eps-converted-to.pdf figuras/voi_vi.eps>
-(epstopdf)             \includegraphics on input line 223.
+(epstopdf)             \includegraphics on input line 236.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/voi_vi-eps-converted-to.pdf, id=22, 275.0275pt x 130.4875pt>
+<figuras/voi_vi-eps-converted-to.pdf, id=21, 275.0275pt x 130.4875pt>
 File: figuras/voi_vi-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/voi_vi-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/voi_vi-eps-converted-to.pdf  used on input line 223.
+Package pdftex.def Info: figuras/voi_vi-eps-converted-to.pdf  used on input line 236.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 Package epstopdf Info: Source file: <figuras/voi_vr.eps>
 (epstopdf)                    date: 2025-09-08 09:08:08
@@ -687,27 +687,29 @@ Package epstopdf Info: Source file: <figuras/voi_vr.eps>
 (epstopdf)                    date: 2025-09-08 09:08:08
 (epstopdf)                    size: 76063 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/voi_vr-eps-converted-to.pdf figuras/voi_vr.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/voi_vr-eps-converted-to.pdf, id=23, 275.0275pt x 130.4875pt>
+<figuras/voi_vr-eps-converted-to.pdf, id=22, 275.0275pt x 130.4875pt>
 File: figuras/voi_vr-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/voi_vr-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/voi_vr-eps-converted-to.pdf  used on input line 229.
+Package pdftex.def Info: figuras/voi_vr-eps-converted-to.pdf  used on input line 242.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 215--233
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--246
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 215--233
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--246
  [] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 215--233
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--246
  [] 
  []
+
+
 
 
 ** Conference Paper **
@@ -722,8 +724,6 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-
-
 [2 <./figuras/ir_id_vl-eps-converted-to.pdf> <./figuras/voi_vi-eps-converted-to.pdf> <./figuras/voi_vr-eps-converted-to.pdf>] (c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
@@ -731,15 +731,15 @@ L3 programming layer <2025-08-13>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39841 strings out of 468133
- 1034379 string characters out of 5430713
- 1731985 words of memory out of 5000000
- 68075 multiletter control sequences out of 15000+600000
+ 39844 strings out of 468133
+ 1034395 string characters out of 5430713
+ 1732068 words of memory out of 5000000
+ 68078 multiletter control sequences out of 15000+600000
  668683 words of font info for 116 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  88i,12n,91p,820b,985s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.pdf (2 pages, 463902 bytes).
+Output written on c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.pdf (2 pages, 463916 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
