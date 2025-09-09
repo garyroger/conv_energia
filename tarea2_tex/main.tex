@@ -81,9 +81,7 @@ Guadalajara, México\\
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your document [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Document title or Abstract.
+El documento presenta un análisis teórico del funcionamiento de un rectificador de media onda con carga RL y un diodo de conducción libre. El análisis se realiza mediante el método de estados asumidos para los diodos y se estudia el comportamiento del circuito en régimen estacionario periódico (PSS). Se derivan las ecuaciones de espacio de estados para cada configuración válida de los diodos y se describe la dinámica de la corriente en el inductor durante los ciclos de conducción y bloqueo.
 \end{abstract}
 
 
@@ -91,9 +89,8 @@ or Math in Document title or Abstract.
 
 
 
-\section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the report page limits.
+\section{Introducción}
+La siguiente figura muestra un rectificador de media onda con diodo de conducción libre el cual se utiliza para realizar el analisis mediante estados asumidos y PSS.
  
 \begin{figure}[ht]
 	\centering
@@ -107,15 +104,15 @@ Please observe the report page limits.
 	\caption{Rectificador de media onda RL con diodo de conducción libre}
 	\label{Fig1}
 \end{figure}
-\section{Análisis del rectificador monofásico de media onda con carga \(R\!-\!L\) y diodo de corrida libre}
+\section{Análisis del rectificador monofásico de media onda con carga \(R\!-\!L\) y diodo de conducción libre}
 La fuente sinusoidal de la entrada es: 
 \[
 v_i(t)=V_m\sin(\omega t),
 \]
 una impedancia serie \(R\) y \(L\) (carga), y dos diodos ideales:
 \begin{itemize}
-  \item \(D_1\): rectificador que conecta la fuente a la carga.
-  \item \(D_2\): diodo de \emph{corrida libre} en paralelo a la carga.
+  \item \(D_1\): diodo que conecta la fuente a la carga.
+  \item \(D_2\): diodo de conducción libre en paralelo a la carga.
 \end{itemize}
 
 \subsection{Estados asumidos de los diodos}
@@ -201,9 +198,9 @@ donde \(I_1\) es la corriente en el instante \(t_1\) en que comienza la \emph{co
 \subsection{Análisis de estado estacionario periódico}
 Para analizar estado estacionario periódico (PSS) del circuito mostrado en la Fig. \ref{Fig1} se considera que la corriente en el inductor
 es periódica, cumpliendo $i_L(\theta)=i_L(\theta+2\pi)$. Durante el intervalo de conducción del diodo principal ($0 \leq \theta \leq \pi$) la corriente $i_L$ sigue una respuesta natural forzada
-dada por la ecuación y durante la conducción del diodo volante ($\pi \leq \theta \leq 2\pi$) la corriente $i_L$ sigue una respuesta descrita por la ecuación
+dada por (\ref{ecu1}) y durante la conducción del diodo volante ($\pi \leq \theta \leq 2\pi$) la corriente $i_L$ sigue una respuesta descrita por (\ref{ecu2})
 
-\section{Comportamiento en el rectificador de media onda con carga $RL$ y diodo de corrida libre}
+\section{Comportamiento en el rectificador de media onda con carga $RL$ y diodo de conducción libre}
 En este convertidor, el voltaje del inductor está regido por la relación constitutiva $v_L(t)=L\,\tfrac{d}{dt}i_L$; por tanto, el signo de $v_L$ determina si la corriente crece ($v_L>0$) o decrece ($v_L<0$). Durante el semiciclo positivo, $D_1$ conduce y la salida sigue a la fuente, de modo que el comportamiento de la rama activa se describe por:
 
 \begin{equation*}
@@ -247,8 +244,12 @@ explica que el área positiva de $v_L$ durante la carga de $L$ se compense exact
   \label{fig:rectificador-subfigs}
 \end{figure}
 
+\section{Conclusiones}
+Los métodos de estados asumidos y PSS son de gran importancia para analizar el comportamiento del sistema, determinando los estados válidos en función de la configuración y funcionamiento de los diodos presentes.
 
+A partir de los estados válidos se determinan las ecuaciones que rigen el comportamiento de las señales de voltajes y corrientes en el circuito. 
 
+El diodo de conducción libre es relevante para este rectificador porque permite la descarga parcial o total de la energía almacenada en el inductor durante el semiciclo negativo de $v_i$
 
 
 
