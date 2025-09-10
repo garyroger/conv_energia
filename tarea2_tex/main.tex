@@ -160,20 +160,19 @@ L\frac{di}{dt} + R\,i(t) = v_s(t) = V_m\sin(\omega t).
 \dot{x}(t)
 =
 -\dfrac{R}{L}
-\begin{bmatrix}x(t)\end{bmatrix}
+x(t)
 +
 \dfrac{1}{L}
 \qquad
 y(t)=Rx(t).
 \]
 Solución general (con condición \(i(t_0)=I_0=0\)):
-\begin{equation}
-i(t) =\frac{V_m \omega L}{R^2 + (\omega L)^2} e^{-\frac{R}{L}t} + {\frac{V_m}{\sqrt{R^2 + (\omega L)^2}} \sin(\omega t - \phi)}
-\label{ecu1}
-\end{equation}
 \[
-\phi=\arctan\!\frac{\omega L}{R}
+i(t) = \frac{V_m}{Z} \left[ \sin(\omega t - \phi) + \frac{\omega L}{Z} e^{-\frac{R}{L}t} \right]
 \]
+
+
+$Z = \sqrt{R^2 + (\omega L)^2}$ es la impedancia total que se opone al flujo de la corriente, y $\phi = \arctan\left(\frac{\omega L}{R}\right)$ es el ángulo de desfase entre el voltaje y la corriente. 
 
 \paragraph{Estado B}
 La ecuación diferencial para este estado es:
