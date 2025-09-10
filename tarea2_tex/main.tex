@@ -160,7 +160,7 @@ L\frac{di}{dt} + R\,i(t) = v_s(t) = V_m\sin(\omega t).
 \dot{x}(t)
 =
 -\dfrac{R}{L}
-\begin{bmatrix}x(t)\end{bmatrix}
+x(t)
 +
 \dfrac{1}{L}
 \qquad
@@ -168,12 +168,12 @@ y(t)=Rx(t).
 \]
 Solución general (con condición \(i(t_0)=I_0=0\)):
 \begin{equation}
-i(t) =\frac{V_m \omega L}{R^2 + (\omega L)^2} e^{-\frac{R}{L}t} + {\frac{V_m}{\sqrt{R^2 + (\omega L)^2}} \sin(\omega t - \phi)}
+i(t) = \frac{V_m}{Z} \left[ \sin(\omega t - \phi) - \sin(\omega t_0 - \phi)e^{-\frac{R}{L}(t-t_0)} \right]
 \label{ecu1}
 \end{equation}
-\[
-\phi=\arctan\!\frac{\omega L}{R}
-\]
+
+
+$Z = \sqrt{R^2 + (\omega L)^2}$ es la impedancia total que se opone al flujo de la corriente, y $\phi = \arctan\left(\frac{\omega L}{R}\right)$ es el ángulo de desfase entre el voltaje y la corriente. 
 
 \paragraph{Estado B}
 La ecuación diferencial para este estado es:
@@ -196,9 +196,9 @@ i(t)=I_1\,e^{-\frac{R}{L}(t-t_1)}
 
 donde \(I_1\) es la corriente en el instante \(t_1\) en que comienza la \emph{conducción libre}.
 \subsection{Análisis de estado estacionario periódico}
-Para analizar estado estacionario periódico (PSS) del circuito mostrado en la Fig. \ref{Fig1} se considera que la corriente en el inductor
-es periódica, cumpliendo $i_L(\theta)=i_L(\theta+2\pi)$. Durante el intervalo de conducción del diodo principal ($0 \leq \theta \leq \pi$) la corriente $i_L$ sigue una respuesta natural forzada
-dada por (\ref{ecu1}) y durante la conducción del diodo volante ($\pi \leq \theta \leq 2\pi$) la corriente $i_L$ sigue una respuesta descrita por (\ref{ecu2})
+Para analizar estado estacionario periódico (PSS) del circuito mostrado, en la Fig. \ref{Fig1} se considera que la corriente en el inductor
+es periódica, cumpliendo $i_L(\theta)=i_L(\theta+2\pi)$. Durante el intervalo de conducción de $D_1$ ($0 \leq \theta \leq \pi$), la corriente $i_L$ sigue una respuesta natural forzada
+dada por (\ref{ecu1}); y durante la conducción de $D_2$ ($\pi \leq \theta \leq 2\pi$), la corriente $i_L$ sigue una respuesta descrita por (\ref{ecu2})
 
 \section{Comportamiento en el rectificador de media onda con carga $RL$ y diodo de conducción libre}
 En este convertidor, el voltaje del inductor está regido por la relación constitutiva $v_L(t)=L\,\tfrac{d}{dt}i_L$; por tanto, el signo de $v_L$ determina si la corriente crece ($v_L>0$) o decrece ($v_L<0$). Durante el semiciclo positivo, $D_1$ conduce y la salida sigue a la fuente, de modo que el comportamiento de la rama activa se describe por:

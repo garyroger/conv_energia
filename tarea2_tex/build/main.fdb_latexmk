@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757426571.00932 "g:/Mi unidad/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" "build/main.pdf" "main" 1757426572.46428 0
+["pdflatex"] 1757535114.65964 "g:/Mi unidad/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" "build/main.pdf" "main" 1757535116.11648 0
   "C:/Users/garyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757362854 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/garyr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1754416732 24225045 3a470790f2ce07baecef6f229243408a ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -178,12 +178,12 @@
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "IEEEtran.cls" 1652460826 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/main.aux" 1757426572 2153 859b3b272b702fb4e502e88b8bfc1fb1 "pdflatex"
-  "figuras/ir_id_vl.eps" 1757296124 301145 8cda68638ebefaf7c8c825d375fa5fac ""
-  "figuras/voi_vi.eps" 1757188699 281509 e59cf8484fc3f78ca0fc36409f9ccf20 ""
-  "figuras/voi_vr.eps" 1757188707 211947 af36caae332ec612ff9be32d8e501057 ""
-  "g:/Mi unidad/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" 1757426555 10917 9c116153dda469f110c3fefd2e6772b6 ""
-  "main.tex" 1757426555 10917 9c116153dda469f110c3fefd2e6772b6 ""
+  "build/main.aux" 1757535115 2153 859b3b272b702fb4e502e88b8bfc1fb1 "pdflatex"
+  "figuras/ir_id_vl.eps" 1757535055 292209 006a2971fa90dde2f7ddba26262b629c ""
+  "figuras/voi_vi.eps" 1757535099 286103 bcdb5bac149fd3f8f81f355543a35d4f ""
+  "figuras/voi_vr.eps" 1757535112 216223 3e557b3de591929c1d208f9b4017d549 ""
+  "g:/Mi unidad/Nube/Documentos/MCIE/2025B/Conversion de Energia/tarea2/tarea2_tex/main.tex" 1757528624 11018 71a3ba7c47a91d14eb3bc772472f2f45 ""
+  "main.tex" 1757528624 11018 71a3ba7c47a91d14eb3bc772472f2f45 ""
   (generated)
   "build/main.aux"
   "build/main.log"
