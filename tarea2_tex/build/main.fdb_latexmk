@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757601832.59919 "c:/Users/Glade/OneDrive/Documents/Visual_Proyectos/conv_energia/tarea2_tex/main.tex" "build/main.pdf" "main" 1757601833.74042 0
+["pdflatex"] 1757602050.14373 "c:/Users/Glade/OneDrive/Documents/Visual_Proyectos/conv_energia/tarea2_tex/main.tex" "build/main.pdf" "main" 1757602051.28411 0
   "C:/Users/Glade/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757344097 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Glade/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1757108096 13257342 5122bec60cceffc49aa5c502ddee735b ""
   "C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -178,12 +178,12 @@
   "C:/Users/Glade/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/Glade/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "IEEEtran.cls" 1757106827 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/main.aux" 1757601833 2228 de17c1121b323ee7b43013b5397ee8b2 "pdflatex"
-  "c:/Users/Glade/OneDrive/Documents/Visual_Proyectos/conv_energia/tarea2_tex/main.tex" 1757601830 10994 0008b2fadaba30469f7da449a9c9f4c6 ""
+  "build/main.aux" 1757602051 2267 b0424be6248b73e5bad573625520c3fa "pdflatex"
+  "c:/Users/Glade/OneDrive/Documents/Visual_Proyectos/conv_energia/tarea2_tex/main.tex" 1757602048 11008 a3bd69256358705cca1ee305863350be ""
   "figuras/ir_id_vl.eps" 1757601813 308250 006a2971fa90dde2f7ddba26262b629c ""
   "figuras/voi_vi.eps" 1757601813 302118 bcdb5bac149fd3f8f81f355543a35d4f ""
   "figuras/voi_vr.eps" 1757601813 227334 3e557b3de591929c1d208f9b4017d549 ""
-  "main.tex" 1757601830 10994 0008b2fadaba30469f7da449a9c9f4c6 ""
+  "main.tex" 1757602048 11008 a3bd69256358705cca1ee305863350be ""
   (generated)
   "build/main.aux"
   "build/main.log"

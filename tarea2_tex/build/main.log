@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  11 SEP 2025 08:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.5)  11 SEP 2025 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -652,9 +652,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-
-LaTeX Warning: Reference `ecu1' on page  undefined on input line 200.
-
 Package epstopdf Info: Source file: <figuras/ir_id_vl.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
 (epstopdf)                    size: 308250 bytes
@@ -662,12 +659,12 @@ Package epstopdf Info: Source file: <figuras/ir_id_vl.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
 (epstopdf)                    size: 107628 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/ir_id_vl-eps-converted-to.pdf figuras/ir_id_vl.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 <figuras/ir_id_vl-eps-converted-to.pdf, id=20, 275.0275pt x 130.4875pt>
 File: figuras/ir_id_vl-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/ir_id_vl-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/ir_id_vl-eps-converted-to.pdf  used on input line 226.
+Package pdftex.def Info: figuras/ir_id_vl-eps-converted-to.pdf  used on input line 227.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 Package epstopdf Info: Source file: <figuras/voi_vi.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
@@ -676,12 +673,12 @@ Package epstopdf Info: Source file: <figuras/voi_vi.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
 (epstopdf)                    size: 102600 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/voi_vi-eps-converted-to.pdf figuras/voi_vi.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 <figuras/voi_vi-eps-converted-to.pdf, id=21, 275.0275pt x 130.4875pt>
 File: figuras/voi_vi-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/voi_vi-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/voi_vi-eps-converted-to.pdf  used on input line 232.
+Package pdftex.def Info: figuras/voi_vi-eps-converted-to.pdf  used on input line 233.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 Package epstopdf Info: Source file: <figuras/voi_vr.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
@@ -690,25 +687,25 @@ Package epstopdf Info: Source file: <figuras/voi_vr.eps>
 (epstopdf)                    date: 2025-09-11 08:43:33
 (epstopdf)                    size: 79174 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras/voi_vr-eps-converted-to.pdf figuras/voi_vr.eps>
-(epstopdf)             \includegraphics on input line 238.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 <figuras/voi_vr-eps-converted-to.pdf, id=22, 275.0275pt x 130.4875pt>
 File: figuras/voi_vr-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/voi_vr-eps-converted-to.pdf>
-Package pdftex.def Info: figuras/voi_vr-eps-converted-to.pdf  used on input line 238.
+Package pdftex.def Info: figuras/voi_vr-eps-converted-to.pdf  used on input line 239.
 (pdftex.def)             Requested size: 258.0pt x 122.41931pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 224--242
+Overfull \hbox (6.0pt too wide) in paragraph at lines 225--243
  [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 224--242
+Overfull \hbox (6.0pt too wide) in paragraph at lines 225--243
  [] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 224--242
+Overfull \hbox (6.0pt too wide) in paragraph at lines 225--243
  [] 
  []
 
@@ -732,21 +729,17 @@ Before submitting the final camera ready copy, remember to:
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
  39839 strings out of 468133
  1034312 string characters out of 5430713
- 1719663 words of memory out of 5000000
+ 1719686 words of memory out of 5000000
  68075 multiletter control sequences out of 15000+600000
  665979 words of font info for 113 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  88i,12n,91p,820b,985s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Glade/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.pdf (2 pages, 466186 bytes).
+Output written on c:\Users\Glade\OneDrive\Documents\Visual_Proyectos\conv_energia\tarea2_tex\build\main.pdf (2 pages, 465404 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
